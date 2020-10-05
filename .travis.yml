@@ -3,7 +3,7 @@ jdk:
   - oraclejdk13
 
 script:
-      - ./gradlew build --scan -s
+      - ./gradlew build --scan
       - ./gradlew check
       - ./gradlew install -x check
       - ./gradlew codeCoverageReport --continue
